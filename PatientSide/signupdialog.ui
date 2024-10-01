@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SignUpDialog</class>
+ <widget class="QDialog" name="SignUpDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>963</width>
+    <height>709</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sign-Up</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,3">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QFrame" name="leftFrame">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(51, 209, 122);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLabel" name="welcomeLabel">
+          <property name="styleSheet">
+           <string notr="true">font: 100 italic 32pt &quot;Ubuntu Sans&quot; ;
+color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>You're
+ a step closer
+ to a better Life</string>
+          </property>
+          <property name="textFormat">
+           <enum>Qt::AutoText</enum>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="rightFrame">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="1" column="0">
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QGroupBox" name="personalInfoGroupBox">
+            <property name="maximumSize">
+             <size>
+              <width>700</width>
+              <height>700</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(0, 0, 0);</string>
+            </property>
+            <property name="title">
+             <string>Personal Info</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_2">
+             <item row="0" column="0">
+              <layout class="QFormLayout" name="formLayout">
+               <item row="0" column="0">
+                <widget class="QLabel" name="usernameLabel">
+                 <property name="styleSheet">
+                  <string notr="true">font: 100 italic 13pt &quot;Ubuntu Sans&quot; ;
+color: rgb(0, 0, 0);</string>
+                 </property>
+                 <property name="text">
+                  <string>Username</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QLineEdit" name="usernameLineEdit">
+                 <property name="autoFillBackground">
+                  <bool>false</bool>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(0, 0, 0);</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="echoMode">
+                  <enum>QLineEdit::Normal</enum>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Enter your username here</string>
+                 </property>
+                 <property name="clearButtonEnabled">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="passwordLabel">
+                 <property name="styleSheet">
+                  <string notr="true">font: 100 italic 13pt &quot;Ubuntu Sans&quot; ;
+color: rgb(0, 0, 0);</string>
+                 </property>
+                 <property name="text">
+                  <string>Password</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLineEdit" name="passwordLineEdit">
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(0, 0, 0);</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="echoMode">
+                  <enum>QLineEdit::Password</enum>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Enter your password here</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="repeatPasswordLabel">
+                 <property name="styleSheet">
+                  <string notr="true">font: 100 italic 13pt &quot;Ubuntu Sans&quot; ;
+color: rgb(0, 0, 0);</string>
+                 </property>
+                 <property name="text">
+                  <string>Repeat Password</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QLineEdit" name="repeatPasswordLineEdit">
+                 <property name="autoFillBackground">
+                  <bool>false</bool>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(0, 0, 0);</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="echoMode">
+                  <enum>QLineEdit::Password</enum>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Enter your password again here</string>
+                 </property>
+                 <property name="clearButtonEnabled">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="0">
+                <widget class="QLabel" name="fullNameLabel">
+                 <property name="styleSheet">
+                  <string notr="true">font: 100 italic 13pt &quot;Ubuntu Sans&quot; ;
+color: rgb(0, 0, 0);</string>
+                 </property>
+                 <property name="text">
+                  <string>Full Name</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="QLineEdit" name="fullNameLineEdit">
+                 <property name="autoFillBackground">
+                  <bool>false</bool>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(0, 0, 0);</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="echoMode">
+                  <enum>QLineEdit::Normal</enum>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Enter your full name here</string>
+                 </property>
+                 <property name="clearButtonEnabled">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="0">
+                <widget class="QLabel" name="ageLabel">
+                 <property name="styleSheet">
+                  <string notr="true">font: 100 italic 13pt &quot;Ubuntu Sans&quot; ;
+color: rgb(0, 0, 0);</string>
+                 </property>
+                 <property name="text">
+                  <string>Age</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="1">
+                <widget class="QComboBox" name="ageComboBox">
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(0, 0, 0);</string>
+                 </property>
+                 <property name="editable">
+                  <bool>false</bool>
+                 </property>
+                 <property name="currentText">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="0">
+                <widget class="QLabel" name="genderLabel">
+                 <property name="styleSheet">
+                  <string notr="true">font: 100 italic 13pt &quot;Ubuntu Sans&quot; ;
+color: rgb(0, 0, 0);</string>
+                 </property>
+                 <property name="text">
+                  <string>Gender</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="1">
+                <layout class="QHBoxLayout" name="horizontalLayout_2">
+                 <item>
+                  <widget class="QRadioButton" name="maleRadioButton">
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(0, 0, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string>Male</string>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QRadioButton" name="femaleRadioButton">
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(0, 0, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string>Female</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="healthConditionsGroupBox">
+            <property name="maximumSize">
+             <size>
+              <width>700</width>
+              <height>700</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(0, 0, 0);</string>
+            </property>
+            <property name="title">
+             <string>Health Conditions</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_3">
+             <item row="0" column="0">
+              <layout class="QFormLayout" name="formLayout_2">
+               <item row="0" column="0">
+                <layout class="QHBoxLayout" name="bloodSugarManagementLayout">
+                 <item>
+                  <widget class="QLabel" name="bloodSugarManagementLabel">
+                   <property name="styleSheet">
+                    <string notr="true">font: 100 italic 13pt &quot;Ubuntu Sans&quot; ;
+color: rgb(0, 0, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string>Blood Sugar Management</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QCheckBox" name="diabetescheckBox">
+                   <property name="text">
+                    <string>Diabetes</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QCheckBox" name="HypoglycemiaCheckBox">
+                   <property name="text">
+                    <string>Hypoglycemia (Low Blood Sugar)</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item row="1" column="0">
+                <layout class="QHBoxLayout" name="heartHealthLayout">
+                 <item>
+                  <widget class="QLabel" name="heartHealthLabel">
+                   <property name="styleSheet">
+                    <string notr="true">font: 100 italic 13pt &quot;Ubuntu Sans&quot; ;
+color: rgb(0, 0, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string>Heart Health</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QCheckBox" name="heartDiseaseCheckBox">
+                   <property name="text">
+                    <string>Heart Disease</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QCheckBox" name="highCholesterolCheckBox">
+                   <property name="text">
+                    <string>High Cholesterol</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QCheckBox" name="highBloodPressCheckBox">
+                   <property name="text">
+                    <string>High Blood Pressure</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item row="2" column="0">
+                <layout class="QHBoxLayout" name="digistiveHealthLayout">
+                 <item>
+                  <widget class="QLabel" name="digistiveHealthLabel">
+                   <property name="styleSheet">
+                    <string notr="true">font: 100 italic 13pt &quot;Ubuntu Sans&quot; ;
+color: rgb(0, 0, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string>Digestive Health</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QCheckBox" name="lactoseIntolerancecheckBox">
+                   <property name="text">
+                    <string>Lactose Intolerance</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QCheckBox" name="digistiveHealthCheckBox">
+                   <property name="text">
+                    <string>Celiac Disease</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QCheckBox" name="GERDCheckBox">
+                   <property name="text">
+                    <string>GERD</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item row="3" column="0">
+                <layout class="QHBoxLayout" name="allegriesSensLayout" stretch="0,1">
+                 <property name="spacing">
+                  <number>6</number>
+                 </property>
+                 <item alignment="Qt::AlignTop">
+                  <widget class="QLabel" name="allergiesSenLabel">
+                   <property name="styleSheet">
+                    <string notr="true">font: 100 italic 13pt &quot;Ubuntu Sans&quot; ;
+color: rgb(0, 0, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string>Allergies and Sensitivities</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_3">
+                   <item>
+                    <widget class="QCheckBox" name="foodAllegriesCheckBox">
+                     <property name="text">
+                      <string>Food Allergies (e.g., Peanuts, Shellfish)</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QCheckBox" name="foodSensCheckBox_3">
+                     <property name="text">
+                      <string>Food Sensitivities (e.g., Histamine Intolerance)</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+               <item row="4" column="0">
+                <layout class="QHBoxLayout" name="mentalHealthLayout">
+                 <item alignment="Qt::AlignTop">
+                  <widget class="QLabel" name="MentalHealthLabel">
+                   <property name="styleSheet">
+                    <string notr="true">font: 100 italic 13pt &quot;Ubuntu Sans&quot; ;
+color: rgb(0, 0, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string>Mental Health and Eating</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_4">
+                   <item>
+                    <widget class="QCheckBox" name="depressionCheckBox">
+                     <property name="text">
+                      <string>Depression and Eating Disorders (e.g., Anorexia, Bulimia)</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QCheckBox" name="anxietySensCheckBox">
+                     <property name="text">
+                      <string>Anxiety and Diet</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+               <item row="5" column="0">
+                <layout class="QHBoxLayout" name="weightManagementLayout">
+                 <item alignment="Qt::AlignTop">
+                  <widget class="QLabel" name="weightManagmentLabel">
+                   <property name="styleSheet">
+                    <string notr="true">font: 100 italic 13pt &quot;Ubuntu Sans&quot; ;
+color: rgb(0, 0, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string>Weight Management</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_5">
+                   <item>
+                    <widget class="QCheckBox" name="obesityCheckBox">
+                     <property name="text">
+                      <string>Obesity</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QCheckBox" name="metabolicCheckBox">
+                     <property name="text">
+                      <string>Metabolic Syndrome</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+           <widget class="QPushButton" name="signUpButton">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>250</width>
+              <height>75</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Ubuntu Sans</family>
+              <pointsize>13</pointsize>
+              <italic>true</italic>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 100 bold  italic 13pt &quot;Ubuntu Sans&quot; ;
+background-color: rgb(38, 162, 105);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>Signup</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="2" column="0">
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="0">
+         <spacer name="verticalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
