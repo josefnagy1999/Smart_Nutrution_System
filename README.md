@@ -38,5 +38,5 @@ By: Youssef Nagy Kamal
 
 
 #### REFERENCE:
-
+Please, Check the brief documentation (PDF) file for more details.
 
